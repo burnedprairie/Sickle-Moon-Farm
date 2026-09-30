@@ -1,0 +1,90 @@
+  body {
+  background-color: #99cc99;
+  background-color: #99c68e;
+  background-color: lightblue;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  }
+
+  h1 {
+    margin-bottom: 0em;
+  }
+
+  hr {
+    border: 1px solid black;
+  }
+
+  .important {
+    color: black;
+  }
+
+  a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  .broom {
+    width: 25%;
+    margin-top: 5em;
+  }
+
+  .fence {
+    width: 25%;
+    margin-bottom: 0em;
+  }
+
+  .rainbowtext {
+    font-weight: bold;
+    text-align: left;
+
+    /* Apply the rainbow gradient background */
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+
+    /* Clip the background to the text area only */
+    -webkit-background-clip: text; /* For Safari/older browsers */
+    background-clip: text;
+
+    /* Make the text color transparent to reveal the background gradient */
+    -webkit-text-fill-color: transparent; /* For Safari/older browsers */
+    color: transparent; /* Standard property */
+
+    background-size: 400% 100%; /* Make background larger than the text area */
+    animation: rainbow_animation 20s ease-in-out infinite; /* Add animation */
+}
+
+@keyframes rainbow_animation {
+    0%, 100% {
+        background-position: 0 0; /* Start position of the gradient background */
+    }
+    50% {
+        background-position: 100% 0; /* End position to slide the gradient across */
+    }
+}
+
+
+  @media only screen and (max-width: 600px) {
+    .broom {
+      width: 85%;
+      margin-top: 4em;
+    }
+
+    .fence {
+      width: 85%;
+    }
+}
