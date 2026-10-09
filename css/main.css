@@ -49,6 +49,11 @@
     margin-bottom: 0em;
   }
 
+  .halloween {
+    width: 30%;
+    margin-top: 0em;
+  }
+
   .rainbowtext {
     font-weight: bold;
     text-align: left;
@@ -87,4 +92,9 @@
     .fence {
       width: 85%;
     }
+
+    .halloween {
+    width: 95%;
+    margin-top: 0em;
+  }
 }
