@@ -1,0 +1,119 @@
+html { 
+    background: url(/img/tree.jpg) no-repeat center center fixed; 
+    background-color: ivory;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+ body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  }
+
+  h1 {
+    margin-bottom: 0em;
+  }
+
+  hr {
+    border: 1px solid black;
+  }
+
+  .info {
+    width: 100%;
+    max-width: 1000px;
+    margin: 5em auto 0; 
+    text-align: center;
+    color: yellow;
+    background-color: blue;
+}
+
+.fence {
+    width: 50%;
+    margin-bottom: 0em;
+  }
+
+  .important {
+    color: black;
+  }
+
+  a:link {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+  .rainbowtext {
+    font-weight: bold;
+    text-align: left;
+
+    /* Apply the rainbow gradient background */
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+
+    /* Clip the background to the text area only */
+    -webkit-background-clip: text; /* For Safari/older browsers */
+    background-clip: text;
+
+    /* Make the text color transparent to reveal the background gradient */
+    -webkit-text-fill-color: transparent; /* For Safari/older browsers */
+    color: transparent; /* Standard property */
+
+    background-size: 400% 100%; /* Make background larger than the text area */
+    animation: rainbow_animation 20s ease-in-out infinite; /* Add animation */
+}
+
+@keyframes rainbow_animation {
+    0%, 100% {
+        background-position: 0 0; /* Start position of the gradient background */
+    }
+    50% {
+        background-position: 100% 0; /* End position to slide the gradient across */
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  body:before {
+      content: "";
+      display: block;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -10;
+      background: url(/img/tree.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+   p {
+    width: 90%;
+    max-width: 1000px;
+   } 
+
+   .fence {
+      width: 90%;
+    }
+    
+}

@@ -1,6 +1,4 @@
   body {
-  background-color: #99cc99;
-  background-color: #99c68e;
   background-color: lightblue;
   font-family: 'Times New Roman', Times, serif;
   font-size: medium;
@@ -39,9 +37,37 @@
     text-decoration: underline;
   }
 
+  .product {
+    margin-bottom: 5em;
+    min-height: 400px;
+    width: 100%;
+  }
+
+  .product-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+    font-size: medium;
+    color: black;
+  }
+
+  div.product-image {
+    display:inline-block;
+  }
+
+
+  img {
+    width: 100%;
+    max-width: 550px;
+    border: 0px;
+    border-style: solid;
+    border-image: black;
+  }
+
   .broom {
     width: 25%;
     margin-top: 5em;
+    border: solid 4px blue;
+    padding: 5px;
   }
 
   .fence {

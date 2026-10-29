@@ -1,0 +1,43 @@
+body {
+  background-color: #14241a;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  }
+
+  h1 {
+    margin-bottom: 0em;
+    color: red;
+  }
+
+  hr {
+    border: 1px solid red;
+  }
+
+  p {
+    color: red;
+  }
+
+  a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  @media only screen and (max-width: 600px) {
+    
+}
